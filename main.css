@@ -4,7 +4,7 @@
 * {
 	margin:0;
 	padding:0;
-	/* border:0.05px solid blue; */
+	/* border:1px solid blue; */
 }
 ul {
 	list-style-position:inside;
@@ -23,11 +23,9 @@ main {
 }
 #sidebar {
 	background-color:#272727;
-	/* height:100vh; */
 	color:lightgrey;
-	/* flex-basis: 30%; */
+	flex-basis: 30%;
 	font-size:1.35rem;
-	/* white-space:nowrap; */
 }
 #name {
 	/*font-size:20px;*/
@@ -59,7 +57,7 @@ main {
 	list-style-type:none;
 }
 #skills li,
-#software li {
+#tools li {
   overflow-wrap: break-word;
   margin-bottom:10px;
   white-space: normal;
@@ -74,9 +72,9 @@ ul#languages {
 	padding: 0.2rem 0;
 	white-space:nowrap;
 	/*font-size:1.355rem;*/
+	/* display: inline-block; */
 }
 #languages li:nth-child(n+6) {
-	
 	text-align: right;
 }
 #languages li
