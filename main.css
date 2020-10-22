@@ -1,0 +1,164 @@
+:root {
+	--left-pad:15px;
+}
+* {
+	margin:0;
+	padding:0;
+
+	/* border:0.05px solid black; */
+}
+ul {
+	list-style-position:inside;
+}
+html, body {
+	/* margin: auto; */
+	/* height: 100%; */
+	width: 100%;
+}
+body {
+	display:flex;
+	align-items: stretch;
+	/* overflow:hidden; */
+	font-family:Arimo;
+}
+#sidebar {
+	background-color:#272727;
+	/* height:100vh; */
+	color:lightgrey;
+	flex-basis: 30%;
+	min-width: 0;
+	font-size:1.35rem;
+	/* white-space:nowrap; */
+}
+#name {
+	/*font-size:20px;*/
+}
+#position {
+	padding-top:10px;
+	margin-bottom:10px;
+	font-size:18px;
+}
+.head {
+	background:#181818;
+	padding:7px;
+}
+.head p {
+	margin-left:var(--left-pad);
+}
+#main_head, .subsec {
+	padding:var(--left-pad);
+}
+.piece_head {
+	margin-top:10px;
+	margin-bottom:3px;
+}
+.piece {
+	margin-bottom:10px;
+}
+#skills ul,
+.subsec ul {
+	list-style-type:none;
+}
+#skills li,
+#software li {
+  overflow-wrap: break-word;
+  margin-bottom:10px;
+  white-space: normal;
+}
+ul#languages {
+	columns:2;
+	column-gap:0;
+	column-rule:0;
+	list-style-type:none;
+}
+#languages li {
+	padding: 0.2rem 0;
+	white-space:nowrap;
+	/*font-size:1.355rem;*/
+}
+#head_prog {
+	/*font-size:1.2rem;*/
+}
+#content {
+	/* height: 100%; */
+	background: white;
+	padding:20px;
+	padding-top:25px;
+	flex-basis: 70%;
+	/* white-space:nowrap; */
+}
+#objective {
+	margin:5px;
+	margin-bottom:9px;
+	line-height:1.6;
+	font-size:0.8rem;
+	/*font-weight:600;*/
+}
+.section-title {
+	border-top:solid #d5d6d6 0.1rem;
+	border-bottom:solid #d5d6d6 0.1rem;
+	font-weight:700;
+	padding:3px 0;
+	/*margin-bottom:10px;*/
+}
+.exp_item {
+	font-size:0.8rem;
+}
+.item_desc h4 {
+	font-size: 1rem;
+}
+.item_desc ul {
+	float:right;
+	list-style-position:outside;
+	margin-left:25px;
+}
+.item_desc li {
+	font-size: 1rem;
+	
+}
+.sec_item {
+	display:flex;
+	align-items: center;
+}
+.item_date {
+	font-weight:lighter;
+	color:#777;
+	flex-basis:10%;
+	align-self:flex-start;
+	margin:5px 0 0 5px;
+}
+.item_desc {
+	margin-left:20px;
+	margin-bottom:10px;
+}
+.item_desc h3 {
+	font-weight:normal;
+	margin:5px 0 5px 0;
+	font-size:1.4rem;
+}
+.item_desc h2 {
+	font-size:1.3rem;
+}
+#classes {
+	columns:2;
+	list-style-position:outside;
+}
+#classes li {
+	font-size:0.875rem;
+	padding:2px;
+}
+div#experience .sec_item:nth-child(odd) {
+	background-color:#eee;
+}
+div#education .sec_item:nth-child(even) {
+	background-color:#eee;
+}
+
+@media(max-width: 768px) {
+	/* #sidebar {
+		font-size:1rem;
+	} */
+	ul#languages {
+		columns:1;
+	}
+}
