@@ -9,8 +9,8 @@
 ul {
 	list-style-position:inside;
 }
+
 main {
-	margin: auto;
 	display: flex;
 	align-items: stretch;
 	font-family:Arimo;
