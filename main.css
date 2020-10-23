@@ -9,16 +9,10 @@
 ul {
 	list-style-position:inside;
 }
-html, body {
-	/* height: 100%; */
-	/* width: 100%; */
-	background: green;
-}
 main {
 	margin: auto;
 	display: flex;
 	align-items: stretch;
-	/* overflow:hidden; */
 	font-family:Arimo;
 }
 #sidebar {
@@ -45,12 +39,15 @@ main {
 #main_head, .subsec {
 	padding:var(--left-pad);
 }
-.piece_head {
-	margin-top:10px;
-	margin-bottom:3px;
+
+.info-piece {
+	margin: 0 0 10px;
+	display: flex;
+	align-items: center;
 }
-.piece {
-	margin-bottom:10px;
+.info-piece i {
+	margin-right: 4px;
+	font-size: 1.5rem;
 }
 #skills ul,
 .subsec ul {
@@ -73,7 +70,7 @@ ul#languages {
 	white-space:nowrap;
 	/*font-size:1.355rem;*/
 }
-#languages li:nth-child(n+6) {
+#languages li:nth-child(n+7) {
 	text-align: right;
 }
 #languages li
@@ -160,4 +157,8 @@ div#education .sec_item:nth-child(even) {
 }
 .section:last-child .sec_item:last-child {
 	padding-bottom: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
 }
