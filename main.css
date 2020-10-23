@@ -149,15 +149,16 @@ ul#languages {
 	font-size:0.875rem;
 	padding:2px;
 }
-div#experience .sec_item:nth-child(odd) {
+#experience .sec_item:nth-child(odd) {
 	background-color:#eee;
 }
-div#education .sec_item:nth-child(even) {
+#education .sec_item:nth-child(even) {
 	background-color:#eee;
 }
 .section:last-child .sec_item:last-child {
 	padding-bottom: 0;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
