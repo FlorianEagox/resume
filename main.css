@@ -21,9 +21,6 @@ main {
 	flex-basis: 30%;
 	font-size:1.35rem;
 }
-#name {
-	/*font-size:20px;*/
-}
 #position {
 	padding-top:10px;
 	margin-bottom:10px;
@@ -80,9 +77,11 @@ ul#languages {
 
 #content {
 	background: white;
-	padding: 25px 20px 0;
+	margin: 25px 20px 0;
 	/* flex-basis: 70%; */
 	/* white-space:nowrap; */
+	display: flex;
+	flex-direction: column;
 }
 
 #objective {
@@ -92,7 +91,14 @@ ul#languages {
 	font-size:0.8rem;
 	/*font-weight:600;*/
 }
-
+#sections {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+#sections > *:last-child {
+	margin-top: auto;
+}
 .sec_item {
 	display:flex;
 	align-items: center;
@@ -106,7 +112,7 @@ ul#languages {
 	margin:5px 0 0 5px;
 }
 
-.section-title {
+section .title {
 	border-top:solid #d5d6d6 0.1rem;
 	border-bottom:solid #d5d6d6 0.1rem;
 	font-weight:700;
@@ -142,7 +148,7 @@ ul#languages {
 }
 .classes {
 	columns:2;
-	width: 100%;
+	width: 80%;
 	list-style-position:outside;
 }
 .classes li {
@@ -155,9 +161,9 @@ ul#languages {
 #education .sec_item:nth-child(even) {
 	background-color:#eee;
 }
-.section:last-child .sec_item:last-child {
+/* section :last-child .sec_item:last-child {
 	padding-bottom: 0;
-}
+} */
 
 a {
 	text-decoration: none;
