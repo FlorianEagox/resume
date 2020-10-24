@@ -9,11 +9,11 @@
 ul {
 	list-style-position:inside;
 }
-
+/* html, body, main { height: 100%; } */
 main {
 	display: flex;
 	align-items: stretch;
-	font-family:Arimo;
+	font-family: Arimo;
 }
 #sidebar {
 	background-color:#272727;
@@ -85,14 +85,15 @@ ul#languages {
 }
 
 #objective {
-	margin:5px;
+	margin: auto 5px;
 	margin-bottom:9px;
 	line-height:1.6;
-	font-size:0.8rem;
-	/*font-weight:600;*/
+	font-size:1.1rem;
+	/* font-weight:600; */
 }
 #sections {
-	flex-grow: 1;
+	/* flex-grow: 1; */
+	margin-top: auto;
 	display: flex;
 	flex-direction: column;
 }
