@@ -13,7 +13,7 @@ ul {
 main {
 	display: flex;
 	align-items: stretch;
-	font-family: Arimo;
+	font-family: 'Arimo';
 }
 #sidebar {
 	background-color:#272727;
@@ -80,6 +80,7 @@ ul#languages {
 	padding: 25px 20px 0;
 	/* flex-basis: 70%; */
 	/* white-space:nowrap; */
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
