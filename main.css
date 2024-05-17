@@ -4,7 +4,7 @@
 * {
 	margin:0;
 	padding:0;
-	/* border:1px solid blue; */
+	/* outline: 1px solid black; */
 }
 ul {
 	list-style-position:inside;
@@ -36,15 +36,21 @@ main {
 #main_head, .subsec {
 	padding:var(--left-pad);
 }
-
+#main_head h1 {
+	font-size: 2rem;
+}
 .info-piece {
 	margin: 0 0 10px;
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
 }
 .info-piece i {
 	margin-right: 4px;
 	font-size: 1.23rem;
+}
+#email {
+	font-size: 1.18rem;
 }
 #skills ul,
 .subsec ul {
@@ -84,7 +90,7 @@ ul#languages {
 	padding: 21px 16px 0;
 	/* white-space:nowrap; */
 	flex: 1;
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	justify-content: space-around;
 }
@@ -94,6 +100,7 @@ ul#languages {
 	margin: 7px 4px;
 	line-height: 1.6;
 	font-size: 1rem;
+	flex: 0;
 	/* font-weight:600; */
 }
 #sections {
@@ -112,9 +119,10 @@ ul#languages {
 .item_date {
 	font-weight:lighter;
 	color:#777;
-	flex-basis:10%;
+	flex-basis:11%;
+	min-width: 11%;
 	align-self:flex-start;
-	margin:5px 0 0 5px;
+	margin: 5px 0 0 5px;
 }
 
 section .title {
@@ -125,8 +133,8 @@ section .title {
 	/*margin-bottom:10px;*/
 }
 #experience .sec_item {
-	margin-left: 16px;
-	flex-grow: 1;
+
+	flex-grow: 0 0;
 }
 .sec_item h4 {
 	font-size: 0.9rem;
@@ -175,20 +183,15 @@ section .title {
 #projects {
 	display: flex;
 }
-#projects .sec_item {
-	flex-basis: calc(100% / 3);
-	text-align: center;
-}
 #projects .sec_item:nth-child(even) {
 	background-color: #eee;
 }
-
 #projects .sec_item {
-	margin: 0 0.25em;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 0.2em;
+	padding: 0.25em;
 }
 
 #projects .horizontal h3 {

@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Resume - Seth Painter</title>
+	<title>Resume - Tessa Painter</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arimo" />
-	<script src="https://kit.fontawesome.com/c3db8f4cfe.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="main.css">
 </head>
 
