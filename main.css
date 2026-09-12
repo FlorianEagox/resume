@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap'); */
 
 :root {
 	--left-pad:12px;
@@ -22,7 +22,7 @@ main {
 	background-color:#272727;
 	color:lightgrey;
 	flex-basis: 30%;
-	font-size:1.2rem;
+	font-size:1.7rem;
 }
 #position {
 	margin: 7px 0;
@@ -49,19 +49,20 @@ main {
 }
 .info-piece i {
 	margin-right: 4px;
-	font-size: 1.23rem;
+	font-size: 1.3rem;
 }
 #email {
-	font-size: 1.18rem;
+	/* font-size: 1.18rem; */
 }
 #skills ul,
 .subsec ul {
 	list-style-type:none;
 }
+.info-piece,
 #skills li,
 #tools li {
   overflow-wrap: break-word;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   white-space: normal;
 }
 ul#languages {
@@ -195,7 +196,126 @@ section .title {
 	justify-content: space-between;
 	padding: 0.25em;
 }
-
+#projects .sec_item:first-child {
+	padding: 0;
+}
+#projects .sec_item:first-child a {
+	font-size: 0.8em;
+}
 #projects .horizontal h3 {
 	/* text-align: center; */
+}
+
+@media print {
+	@page {
+		size: A4 portrait;
+		margin: 0.35in;
+	}
+
+	html, body {
+		height: auto;
+		background: #fff;
+		font-size: 12.5px;
+	}
+
+	body {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	main {
+		display: grid !important;
+		grid-template-columns: 31% 69%;
+		width: 100%;
+		min-height: 10.8in;
+		max-width: 100%;
+		align-items: stretch;
+	}
+
+	#sidebar,
+	#content {
+		height: auto;
+		min-height: 10.8in;
+	}
+
+	#sidebar {
+		padding-bottom: 0;
+		font-size: 1.05rem;
+	}
+
+	#main_head h1 {
+		font-size: 1.8rem;
+	}
+
+	#position {
+		margin: 5px 0;
+		font-size: 13px;
+	}
+
+	#content {
+		padding: 12px 12px 0 14px;
+	}
+
+	#objective {
+		margin: 2px 4px 6px;
+		font-size: 0.95rem;
+		line-height: 1.45;
+	}
+
+	section,
+	.sec_item,
+	.subsec,
+	#projects .sec_item,
+	.info-piece,
+	.head {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	section .title {
+		padding: 2px 0;
+	}
+
+	.sec_item {
+		padding-bottom: 4px;
+	}
+
+	.item_date {
+		margin: 3px 0 0 3px;
+	}
+
+	.sec_item h3 {
+		margin: 3px 0 4px;
+		font-size: 1.02rem;
+		white-space: normal;
+	}
+
+	.sec_item h4 {
+		font-size: 0.83rem;
+	}
+
+	.sec_item li {
+		font-size: 0.78rem;
+		margin-bottom: 0.5px;
+	}
+
+	#languages li {
+		padding: 0.12rem 0;
+		white-space: normal;
+	}
+
+	#projects {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0;
+		margin-top: 2px;
+	}
+
+	#projects .sec_item {
+		padding: 0.18em;
+	}
+
+	#projects .sec_item h3 {
+		margin-top: 0;
+	}
 }
